@@ -11,6 +11,7 @@ public class TestController {
 
 	@GetMapping("/hello/{name}")
 	public String hello(@PathVariable("name") String name) {
+		System.out.println("Name::"+name);
 		return "Hello "+name;
 	}
 }
